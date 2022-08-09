@@ -396,3 +396,23 @@ for(var i = 0; i < whatILearn.length; i++){
     var showlearnArray = whatILearn[i];
     // console.log(showlearnArray);
 }
+
+// Practice Problem 23
+
+var useMobile = ['Nokia 1600', 'Chinese Lowed', 'Chinese Touchscreen', 'Walton Premio F12', 'Nokia', 'Walton E13', 'Samphony D12', 'Xhawmi Note Pro 7', 'Walton Button', 'Samsung'];
+
+var i = 0;
+while(i < useMobile.length){
+    var showModel = useMobile[i];
+    // console.log(showModel);
+    i++;
+}
+
+// Pracitce Problem 24
+
+for(let i = 30; i <= 86; i++){
+    console.log(i);
+    if(i === 44){
+        break;
+    }
+}
