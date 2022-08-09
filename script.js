@@ -411,8 +411,144 @@ while(i < useMobile.length){
 // Pracitce Problem 24
 
 for(let i = 30; i <= 86; i++){
-    console.log(i);
+    // console.log(i);
     if(i === 44){
         break;
     }
 }
+
+// Practice Problem 25
+
+const bookArray = [150, 180, 140, 220, 230, 150, 400, 310, 180, 140];
+
+for(let i = 0; i < bookArray.length; i++){
+    const printArray = bookArray[i];
+    if(printArray > 200){
+        continue;
+    }
+    // console.log(printArray);
+}
+
+// Practice Problem 26
+
+// function foo(){
+//     console.log('foo');
+//     function bar(){
+//         console.log('bar');
+//     }
+//     bar();
+// }
+
+// foo();
+
+//Practice Problem 27
+
+let firstNumber = 16;
+let secondNumber = 30;
+let thirdNumber = 26;
+
+function make_avg(num1, num2, num3){
+    const totalNumber = num1 + num2 + num3;
+    const getAverage = totalNumber / 3;
+    // console.log(getAverage);
+}
+
+make_avg(firstNumber, secondNumber, thirdNumber);
+
+//Practice Problem 28
+
+const averageArray = [10, 20, 30, 80, 50, 100];
+function make_average (aray){
+    let getAverageNumber = 0;
+    for(let i = 0; i < aray.length; i++){
+        getAverageNumber += averageArray[i]
+    }
+    let finalAverage = getAverageNumber / averageArray.length;
+    // console.log(finalAverage);
+}
+
+make_average(averageArray);
+
+// Practice Problem 29
+
+function odd_even(number){
+    if(number % 2 === 0){
+        var massage = 'This is Even number'
+       return massage;
+    } else{
+        var massage1 = 'This is ood number'
+        return massage1;
+    }
+}
+
+const giveEvenOdd = odd_even(4)
+
+// console.log(giveEvenOdd);
+
+// function even_odd(number){
+//     if(number % 2 === 0){
+//        return console.log('This even Number');
+//     } else{
+//         return console.log('This is Odd Number')
+//     }
+// }
+
+// even_odd(13)
+
+// Practice Problem 30 (already Solved)
+
+// Practice Problem 31
+
+
+function muliplicationFunction () {
+    let muliPli = 0;
+    for(let i = 1; i <= 10; i++){
+        muliPli =13*i;
+        // console.log('13 ' + 'X ' + i + ' =', muliPli );
+    }
+}
+
+muliplicationFunction();
+
+// Practice Problem 32
+
+let upperName = "Ahamme Fahim Galib";
+
+function toLowerCase(giveUpper){
+    const giverLowerCase = giveUpper.toLowerCase();
+    // console.log(giverLowerCase);
+}
+
+toLowerCase(upperName);
+
+// Practice Problem 33;
+let firstName = "Ahammed Fahim ";
+let lastName = "Galib";
+
+function fullName(fiName, laName){
+    const giveFullName = fiName + laName;
+    // console.log(giveFullName);
+}
+
+fullName(firstName, lastName);
+
+//  Practice Problem 34
+
+function scuireNumber(num22){
+    const squireNumber = Math.pow(num22, num22);
+    // console.log(squireNumber);
+}
+
+scuireNumber(6);
+
+// Practice Problem 35
+
+function hourToMinute(hour){
+    const hourDisplay = hour + ' Hours is converted to :';
+    console.log(hourDisplay);
+    const converted = hour * 60;
+
+    console.log("The Hours converted into-"+ converted + " Minutes");
+}
+
+hourToMinute(3)
