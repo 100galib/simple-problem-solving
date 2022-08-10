@@ -543,12 +543,247 @@ scuireNumber(6);
 
 // Practice Problem 35
 
-function hourToMinute(hour){
-    const hourDisplay = hour + ' Hours is converted to :';
-    console.log(hourDisplay);
-    const converted = hour * 60;
+// function hourToMinute(hour){
+//     const hourDisplay = hour + ' Hours is converted to :';
+//     console.log(hourDisplay);
+//     const converted = hour * 60;
 
-    console.log("The Hours converted into-"+ converted + " Minutes");
+//     console.log("The Hours converted into-"+ converted + " Minutes");
+// }
+
+// hourToMinute(3)
+
+// Practice Problem 36
+
+const leapFirstArray = [2023, 2024, 2025, 2028, 2030];
+const finalLeapArray = [];
+
+function findLeapYear(takeLeapYear){
+    for(var i = 0; i < takeLeapYear.length; i++){
+        let leapYear = takeLeapYear[i];
+        if(leapYear % 4 === 0){
+            finalLeapArray.push(leapYear);
+        }
+    }
 }
 
-hourToMinute(3)
+findLeapYear(leapFirstArray);
+// console.log(finalLeapArray);
+
+// Practice Problem 37
+
+const oddSum = [5, 7, 8, 10, 45, 30];
+
+function findOddSum(oddArray){
+    let totalOddArray = 0;
+    for(let i = 0; i < oddArray.length; i++){
+        let getoddArray = oddArray[i];
+        if(getoddArray % 2 === 1){
+            totalOddArray += getoddArray;
+        }
+    }
+    // console.log(totalOddArray);
+}
+
+findOddSum(oddSum);
+
+// Practice Problem 38
+
+function leapYear2 (){
+    let nextyear = 23;
+    if(nextyear % 4 === 0){
+        return true;
+    } else{
+        return false;
+    }
+}
+
+const finalOutputResult = leapYear2();
+// console.log(finalOutputResult);
+
+// Practice Problem 39
+
+let myYear = 29;
+
+function myOwnEven (year){
+    if(year % 2 === 0){
+        return true;
+    } else{
+        return false;
+    }
+}
+
+const showMyOwnEven = leapYear2(myYear);
+// console.log(showMyOwnEven);
+
+// Practice Problem 40
+
+let setHours = 5;
+
+function setHourToMinutes(hours){
+    const minuts = 60;
+    const setMinutes = hours * minuts;
+    return setMinutes;
+}
+
+const getHoursToMinutes = setHourToMinutes(setHours);
+// console.log(getHoursToMinutes);
+
+// Practice Problem 41
+
+function displayLoopOneToHundrade(){
+    for(let i = 1; i <= 100; i++){
+        let showOneHundred = i;
+        // console.log(showOneHundred);
+    }
+}
+
+displayLoopOneToHundrade();
+
+// Practice Problem 42
+
+function fiftyToEightyOdd (){
+    for(let i = 51; i <= 80; i+= 2){
+        // console.log(i);
+    }
+}
+fiftyToEightyOdd();
+
+// Practice Problem 43
+
+let num11 = 8;
+let num12 = 12;
+let num13 = 11;
+
+function sumThreeNumber(num1, num2, num3){
+    const totalThreeNumber = num1 + num2 + num3;
+    return totalThreeNumber;
+}
+
+const showThreeNumber = sumThreeNumber(num11, num12, num13);
+// console.log(showThreeNumber);
+
+// Practice Problem 44
+
+let cleciousInput = 34;
+
+function getFahrenheit (cel){
+    let fahrenheit = (cel * 1.8) + 32;
+    return fahrenheit;
+}
+
+const outPutFahren = getFahrenheit(cleciousInput);
+
+// console.log(outPutFahren);
+
+// Practice Problem 45
+
+let fahrenheitInput = 108;
+
+function getFahrenheit (fah){
+    let celsius = (fah - 32) * 0.5555;
+    return celsius;
+}
+
+const outPutClesius = getFahrenheit(fahrenheitInput);
+
+// console.log(outPutClesius);
+
+// Practice Problem 46
+
+// let yourMarks = 66;
+
+// function getYourMarks(marks){
+//     if(marks > 90){
+//         console.log('You Got A+');
+//     } else if(marks > 70 && marks < 90){
+//         console.log('You Got A');
+//     } else if(marks > 60 && marks < 70){
+//         console.log('You Got A-');
+//     } else if(marks > 50 && marks < 60){
+//         console.log('You Got B');
+//     } else if(marks > 40 && marks < 50){
+//         console.log('You Got C');
+//     } else if( marks > 33 && marks < 40){
+//         console.log('You Got D');
+//     } else {
+//         console.log('You Got F');
+//     }
+// }
+
+// getYourMarks(yourMarks);
+
+// Practice Problem 47
+
+let mainTaka1 = 200; //Taka
+let mainTakaTime1 = 5; //year
+let mainTaka2 = 500; //Taka
+let mainTakaTime2 = 6; //year
+let mainIterest = 320; //Taka
+
+function getInterest(mt1, mtt1, mt2, mtt2, mi){
+    const findInterest = (mi * 100) / ((mt1 * mtt1) + (mt2 * mtt2));
+    return findInterest;
+}
+
+const getInte = getInterest(mainTaka1, mainTakaTime1, mainTaka2, mainTakaTime2, mainIterest);
+// console.log(getInte);
+
+// Practice Problem 48
+
+const eightElemt = [22, 23, 38, 21, 98, 44, 36, 10];
+
+function getSmallestNumber (arr){
+    let getSmall = 0;
+    for(let i = 0; i < arr.length; i++){
+        getSmall = arr[i];
+    }
+    const small = Math.min(getSmall);
+    // console.log(small);
+}
+
+getSmallestNumber(eightElemt);
+
+const myArray = [1, 2, 4, 20, 16,100]
+
+var biggest = myArray[0];
+var nextbiggest = myArray[0];
+var lastbiggest = myArray[0];
+    for(var i=0; i<myArray.length; i++){
+        if(myArray[i]>biggest){
+            lastbiggest = nextbiggest
+            nextbiggest = biggest;
+            biggest = myArray[i];
+        }
+        // else if(myArray[i]>nextbiggest && myArray[i]!=biggest)
+        //     nextbiggest = myArray[i];
+    }
+    
+console.log(nextbiggest);
+
+// Practice Problem 50
+
+let height = 55;
+let widht = 45;
+
+function ractangular(he, wi){
+    const finalResult = he * wi;
+    // console.log(finalResult);
+}
+
+ractangular(height, widht);
+
+// Practice Problem 51
+
+const miniArray = [32, 22, 54, 21, 67, 13];
+
+function minimumArray(array){
+    let getMini = 0;
+    for(let i = 0; i < array.length; i++){
+        getMini = array[i];
+    }
+    const getMiniFinal = Math.min(getMini);
+    // console.log(getMiniFinal);
+}
+
+minimumArray(miniArray);
